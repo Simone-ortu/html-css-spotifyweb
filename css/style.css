@@ -17,26 +17,44 @@ main {
 body{
   font-family: 'Roboto', sans-serif;
 }
+main a{
+  text-decoration: none;
+  color: white;
+}
+main .home a{
+  opacity: 0.5;
+
+}
+main .home a:active{
+  opacity: 1;
+  border-left: 5px solid green;
+  vertical-align: super;
+}
 
 .left-nav{
   width: 200px;
   min-height: 200px;
-  background-color: rgb(163, 204, 65);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-nav .logo img{
+  opacity: 1;
 }
 .left-nav img{
   width: 150px;
   margin-top: 25px;
   margin-left: 25px;
 }
+.left-nav .home{
+  height:  120px;
+}
 .left-nav .home img{
   width: 25px;
 }
 .left-nav .home li{
-  height: 30px;
-}
-.left-nav .home  a{
-  text-decoration: none;
-  color: white;
+  margin:0;
 }
 .left-nav .home span {
   padding-left: 10px;
@@ -44,21 +62,60 @@ body{
   font-weight: 600;
   font-size: 14px;
 }
-.left-nav .playlist h4{
+.left-nav .playlist{
+  flex-grow: 2;
+  min-height: 200px;
+  overflow-y: auto;
   margin-top: 50px;
+}
+.left-nav .playlist h4{
   margin-left: 25px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: white;
 }
-.left-nav .playlist{
+.left-nav .playlist ul{
   overflow-y: auto;
+}
+.left-nav .playlist li{
+  margin-left: 25px;
+  list-style: none;
+  line-height: 35px;
 }
 
 
+.fa-plus-square{
+  font-size: 30px;
+  padding: 15px;
+  background-color: grey;
+}
 
 
+.account,
+.download{
 
+}
+.user hr{
+  margin: 0 15px;
+}
+.user .download img{
+  width: 25px;
+  vertical-align: text-bottom;
+}
+.user .account{
+  margin-bottom: 25px;
+}
+.user .account img{
+  width: 20px;
+  border-radius: 50%;
+  border:  2px solid grey;
+  line-height: 20px;
+}
+.user .download a{
+  vertical-align: super;
+  text-decoration: none;
 
+}
 .top-bar{
   width: calc(100% - 200px);
   height: 100px;
@@ -76,5 +133,4 @@ footer{
   position: fixed;
   bottom: 0;
   left: 0;
-
 }
