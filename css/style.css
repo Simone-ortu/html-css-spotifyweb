@@ -7,7 +7,7 @@
 .container{
   height: 100vh;
   width: 100%;
-  background-color: rgb(115, 138, 77);
+  background-color: #141922;
 
 }
 .clearfix::after {
@@ -150,6 +150,31 @@ main .home a:active{
   text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
   width: 100%;
   height: 100px;
@@ -193,10 +218,11 @@ footer{
 
 }
 .tools{
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-60%);
+  transform: translate(-15%,-60%);
 }
 .tools ul li{
  display: inline-block;
@@ -250,6 +276,7 @@ footer{
 }
 
 .volume{
+  width: 300px;
   margin: 45px 10px;
   color: white;
   position: relative;
@@ -262,7 +289,7 @@ footer{
  position: absolute;
  right: 0%;
  top: 50%;
- transform: translate(110%,-50%);
+ transform: translate(-50%,-50%);
 }
 
 .volume .progress-bar {
@@ -277,4 +304,10 @@ footer{
 	height: 5px;
 	background-color: grey;
 	border-radius: 3px;
+}
+@media screen and (max-width: 992px) {
+  .tools ul li a{
+    font-size: 80%;
+
+  }
 }
