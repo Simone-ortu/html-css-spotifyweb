@@ -237,12 +237,17 @@ main .home a:active{
 
 
 }
+.container_a{
+  width: calc(100% - 200px);
+  padding: 10px 30px;
+}
 
 #top-nav{
-  width: calc(100% - 200px);
+  width: 100%;
   height: 150px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 .top_nav_cont{
   width: 100%;
@@ -264,21 +269,39 @@ main .home a:active{
 /* rencetly */
 #recently{
   position: relative;
-  width: calc(100% - 200px);
+  width: 100%;
   height: 250px;
-  background-color: red;
-
+  /* background-color: red; */
 }
+#recently h2{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 .container_b{
-  margin-top: 400px;
-  background-color: red;
+    display: flex;
+    flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
 
-  display: flex;
-  flex-direction: row;
-}
+
 .container_b .album{
   width: calc(100% / 6);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
+.layover{
+  /* display: none; */
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+.album .layover img{
+  width: 150px ;
+}
+
 
 
 
